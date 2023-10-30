@@ -13,9 +13,7 @@ export default function Home() {
         <section className="space-y-6 my-48 lg:my-0 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
           <LandingHero />
         </section>
-        {/* <footer className="flex justify-center items-center text-center text-white">
-        Made with ❤️ by <Link href="https://aayus.me" className="mx-1">Aayush Rajagopalan </Link> and Abrar Labib
-      </footer> */}
+        
       </div>
       <section id="goals" className="bg-sky-950 space-y-6 lg:my-0 pb-8 pt-6 md:pb-10 md:pt-10 lg:py-30">
         <div className="container mx-auto px-4 md:px-6 text-center">
@@ -69,6 +67,9 @@ export default function Home() {
             </Link>
           ))}
         </section>
+        <footer className="flex justify-center items-center text-center text-white">
+        Made with ❤️ by <Link href="https://aayus.me" className="mx-1">Aayush Rajagopalan </Link>, Aditya Sunil Menon and Ahbar Ali
+      </footer> 
       </section>
     </>
   );
