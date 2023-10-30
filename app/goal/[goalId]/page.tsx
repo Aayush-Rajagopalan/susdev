@@ -54,7 +54,7 @@ export default function GoalPage({ params }: { params: { goalId: string } }) {
                 options={{
                   strings: [`${goals.title}`],
                   autoStart: true,
-                  loop: true,
+                  loop: false,
                   delay: "natural",
                 }}
               />
