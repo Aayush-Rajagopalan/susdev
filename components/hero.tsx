@@ -15,17 +15,11 @@ export const LandingHero = () => {
           <TypewriterComponent
             options={{
               strings: [
-                "Reducing Poverty.",
-                "Minimizing Hunger",
-                "Good Health And Well-being",
-                "Quality Education",
-                "Gender Equality",
+                "Taking Care of Nature.",
                 "Clean Water and Sanitation",
                 "Affordable and Clean Energy",
-                "Decent Work and Economic Growth",
-                "Improving Infrastructure",
-                "Reducing Inequality",
                 "Creating Sustainable Cities",
+                "Taking Care of Nature.",
                 "Improving Life on Land",
                 "Improving Life Under Water",
               ],
