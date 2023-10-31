@@ -54,13 +54,13 @@ export default function GoalPage({ params }: { params: { goalId: string } }) {
                 options={{
                   strings: [`${goals.title}`],
                   autoStart: true,
-                  loop: false,
+                  loop: true,
                   delay: "natural",
                 }}
               />
             </div>
             <div className="max-w-screen-md mx-auto">
-              <div className="text-xl font-normal md:text-lg lg:text-xl xl:text-2xl">
+              <div className="text-lg font-normal md:text-lg xl:text-lg">
                 {goals.desc}
               </div>
             </div>

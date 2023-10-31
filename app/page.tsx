@@ -3,6 +3,7 @@ import { LandingNavbar } from "@/components/landing-navbar";
 import { buttonVariants } from "@/components/ui/button";
 import data from "@/data";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -18,14 +19,14 @@ export default function Home() {
       <section id="goals" className="bg-sky-950 space-y-6 lg:my-0 pb-8 pt-6 md:pb-10 md:pt-10 lg:py-30">
         <div className="container mx-auto px-4 md:px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-sky-100">
-            Sustainable Development goal
+            Sustainable Development goals
           </h1>
           <p className="mt-4 text-xl md:text-2xl text-sky-200">
             Our commitment to a sustainable future
           </p>
         </div>
         <section
-          className="container mx-auto px-4 md:px-6 py-12 md:py-24 lg:py-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="container mx-auto px-4 md:px-6 py-12 md:py-24 lg:py-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
           id="goal"
         >
           {data.map((goal) => (
@@ -33,7 +34,7 @@ export default function Home() {
               key={goal.id}
               href={`/goal/${goal.id}`}
             >
-              <div
+              {/* <div
                 className={cn(
                   `p-4 relative group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 ease-in-out hover:-translate-y-2`,
                   {
@@ -63,7 +64,8 @@ export default function Home() {
                 <h3 className="font-bold text-xl py-4 md:text-2xl">
                   {goal.title}
                 </h3>
-              </div>
+              </div> */}
+              <Image src={goal.img} height={800} width={800} alt={goal.id} className="aspect-square h-full"/>
             </Link>
           ))}
         </section>
